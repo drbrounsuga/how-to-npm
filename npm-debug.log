@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.9
+3 info using node@v7.1.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\lavau\\Desktop\\node-school\\how-to-npm',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\lavau\AppData\Roaming\npm-cache\@drbrounsuga\how-to-npm\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\lavau\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle @drbrounsuga/how-to-npm@1.0.0~prepublish: @drbrounsuga/how-to-npm@1.0.0
+11 silly lifecycle @drbrounsuga/how-to-npm@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\lavau\\AppData\\Roaming\\npm-cache\\@drbrounsuga\\how-to-npm\\1.0.0\\package.tgz',
+12 verbose tar pack   'C:\\Users\\lavau\\Desktop\\node-school\\how-to-npm' ]
+13 verbose tarball C:\Users\lavau\AppData\Roaming\npm-cache\@drbrounsuga\how-to-npm\1.0.0\package.tgz
+14 verbose folder C:\Users\lavau\Desktop\node-school\how-to-npm
+15 verbose addLocalTarball adding from inside cache C:\Users\lavau\AppData\Roaming\npm-cache\@drbrounsuga\how-to-npm\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\lavau\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd @drbrounsuga/how-to-npm@1.0.0
+18 verbose afterAdd C:\Users\lavau\AppData\Roaming\npm-cache\@drbrounsuga\how-to-npm\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\lavau\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\lavau\AppData\Roaming\npm-cache\@drbrounsuga\how-to-npm\1.0.0\package\package.json written
+21 silly publish { name: '@drbrounsuga/how-to-npm',
+21 silly publish   version: '1.0.0',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'node test.js' },
+21 silly publish   author: { name: 'LaVaughn Haynes' },
+21 silly publish   license: 'ISC',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/drbrounsuga/nodeSchool.git' },
+21 silly publish   keywords: [ 'npm' ],
+21 silly publish   bugs: { url: 'https://github.com/drbrounsuga/nodeSchool/issues' },
+21 silly publish   homepage: 'https://github.com/drbrounsuga/nodeSchool#readme',
+21 silly publish   description: 'NodeSchool NPM Tutorial',
+21 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   _id: '@drbrounsuga/how-to-npm@1.0.0',
+21 silly publish   _shasum: '577c10989afd22b533773fe5bcc6a1a7d049d8d8',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @drbrounsuga/how-to-npm
+24 silly mapToRegistry scope (from package name) @drbrounsuga
+25 verbose mapToRegistry no registry URL found in name for scope @drbrounsuga
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry http://localhost:15443/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@drbrounsuga/how-to-npm',
+28 silly mapToRegistry   scope: '@drbrounsuga',
+28 silly mapToRegistry   escapedName: '@drbrounsuga%2fhow-to-npm',
+28 silly mapToRegistry   name: '@drbrounsuga/how-to-npm',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri http://localhost:15443/@drbrounsuga%2fhow-to-npm
+30 verbose publish registryBase http://localhost:15443/
+31 silly publish uploading C:\Users\lavau\AppData\Roaming\npm-cache\@drbrounsuga\how-to-npm\1.0.0\package.tgz
+32 verbose request uri http://localhost:15443/@drbrounsuga%2fhow-to-npm
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 6:48:05 PM
+35 verbose request id 18fefab998b4c624
+36 http request PUT http://localhost:15443/@drbrounsuga%2fhow-to-npm
+37 http 404 http://localhost:15443/@drbrounsuga%2fhow-to-npm
+38 verbose headers { 'content-type': 'application/json',
+38 verbose headers   date: 'Wed, 11 Jan 2017 00:48:05 GMT',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   'content-length': '19' }
+39 verbose request invalidating C:\Users\lavau\AppData\Roaming\npm-cache\localhost_15443\_40drbrounsuga_252fhow-to-npm on PUT
+40 error publish Failed PUT 404
+41 verbose stack Error: missing : @drbrounsuga/how-to-npm
+41 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+41 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+41 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+41 verbose stack     at emitTwo (events.js:106:13)
+41 verbose stack     at Request.emit (events.js:191:7)
+41 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+41 verbose stack     at emitOne (events.js:96:13)
+41 verbose stack     at Request.emit (events.js:188:7)
+41 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+42 verbose statusCode 404
+43 verbose pkgid @drbrounsuga/how-to-npm
+44 verbose cwd C:\Users\lavau\Desktop\node-school\how-to-npm
+45 error Windows_NT 10.0.14393
+46 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+47 error node v7.1.0
+48 error npm  v3.10.9
+49 error code E404
+50 error 404 missing : @drbrounsuga/how-to-npm
+51 error 404
+52 error 404 '@drbrounsuga/how-to-npm' is not in the npm registry.
+53 error 404 You should bug the author to publish it (or use the name yourself!)
+54 error 404 Note that you can also install from a
+55 error 404 tarball, folder, http url, or git url.
+56 verbose exit [ 1, true ]

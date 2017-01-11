@@ -1,0 +1,25 @@
+{
+  "name": "@drbrounsuga/how-to-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "LaVaughn Haynes",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drbrounsuga/test.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "bugs": {
+    "url": "https://github.com/drbrounsuga/nodeSchool/issues"
+  },
+  "homepage": "https://github.com/drbrounsuga/nodeSchool#readme",
+  "description": "NodeSchool NPM Tutorial",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
